@@ -60,6 +60,32 @@ class RelationShips {
         return isInLawPresent;
     }
 
+    private static boolean printPartnerOfSiblings(Person person,String Gender){
+        Person parent = person.getMother();
+        String person_name = person.getName();
+        boolean isPartnerOfSiblingsPresent = false;
+        if(parent!=null){
+            for(Person partner : parent.getChildren()){
+                if(!partner.getName().equals(person_name)&&partner.getGender().equals(Gender)){
+                    if(partner.getGender().equals("Male")){
+                        if(partner.getSpouse()!=null){
+                            isPartnerOfSiblingsPresent = true;
+                            System.out.print(partner.getSpouse().getName()+" ");
+                        }
+                    }else{
+                        if(partner.getHusband()!=null){
+                            isPartnerOfSiblingsPresent = true;
+                            System.out.print(partner.getHusband().getName()+" ");
+                        }
+                    }
+                }
+            }
+        }
+        return isPartnerOfSiblingsPresent;
+
+    }
+
+
     public static void findRelationShip(String relationship,Person person){
         boolean isRelationPresent=false;
         switch (relationship) {
@@ -93,12 +119,14 @@ class RelationShips {
                     isRelationPresent = printInLaw(person.getHusband(),"Female");
                 else
                     isRelationPresent = printInLaw(person.getSpouse(),"Female");
+                isRelationPresent =  printPartnerOfSiblings(person,"Male") || isRelationPresent;
                 break;
             case "Brother-In-Law":
                 if(person.getGender().equals("Female"))
                     isRelationPresent = printInLaw(person.getHusband(),"Male");
                 else
                     isRelationPresent = printInLaw(person.getSpouse(),"Male");
+                isRelationPresent =  printPartnerOfSiblings(person,"Female") || isRelationPresent;
                 break;
         }
 

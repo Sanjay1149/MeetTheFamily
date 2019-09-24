@@ -6,5 +6,5 @@ GET_RELATIONSHIP Vila Paternal-Aunt
 GET_RELATIONSHIP Vyas Maternal-Uncle
 GET_RELATIONSHIP Atya Maternal-Aunt
 GET_RELATIONSHIP Amba Brother-In-Law
-GET_RELATIONSHIP Amba Sister-In-Law
-GET_RELATIONSHIP Vyan Brother-In-Law
+GET_RELATIONSHIP Vyas Sister-In-Law
+GET_RELATIONSHIP Vyas Brother-In-Law

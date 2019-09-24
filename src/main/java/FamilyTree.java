@@ -41,7 +41,7 @@ public class FamilyTree {
     }
 
     public static void main(String args[]) throws Exception{
-        File file = new File("C:\\Users\\sanjay\\IdeaProjects\\MeetTheFamily\\src\\main\\resources\\input\\input1.txt");
+        File file = new File("C:\\Users\\sanjay\\IdeaProjects\\MeetTheFamily\\src\\main\\resources\\input\\corner_cases_input.txt");
         BufferedReader br = new BufferedReader(new FileReader(file));
         String st;
         String parent_name;
