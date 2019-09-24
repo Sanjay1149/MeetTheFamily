@@ -17,7 +17,6 @@ Stack Geektrust coding problem
 * With given 'name' & 'relationship', find the people corresponding to the relationship
 in the order in which they were added to the family tree [GET_RELATIONSHIP].
 
-Colons can be used to align columns.
 
 | **Relationships**      | **Definition**                         |
 | ---------------------  |--------------------------------------|
