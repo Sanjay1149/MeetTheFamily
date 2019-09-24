@@ -1,5 +1,11 @@
 class RelationShips {
 
+    /**
+     * Function to print Son/Daughter
+     * @param person
+     * @param gender
+     * @return
+     */
     private static boolean printChildren(Person person,String gender){
         boolean isChildPresent = false;
         for(Person child : person.getChildren()){
@@ -11,6 +17,11 @@ class RelationShips {
         return isChildPresent;
     }
 
+    /**
+     * Function to print the Siblings
+     * @param person
+     * @return
+     */
     private static boolean printSiblings(Person person){
         Person parent = person.getMother();
         String person_name = person.getName();
@@ -26,6 +37,12 @@ class RelationShips {
         return isSiblingPresent;
     }
 
+    /**
+     * Function to print the Paternal/Maternal-Uncle/Aunt
+     * @param parent
+     * @param gender
+     * @return
+     */
     private static boolean printRelative(Person parent,String gender){
         boolean isRelativePresent = false;
         if(parent!=null){
@@ -45,6 +62,12 @@ class RelationShips {
         return isRelativePresent;
     }
 
+    /**
+     * Function to print the Spouse's sisters or brothers
+     * @param person
+     * @param Gender
+     * @return
+     */
     private static boolean printInLaw(Person person,String Gender){
         Person parent = person.getMother();
         String person_name = person.getName();
@@ -60,6 +83,12 @@ class RelationShips {
         return isInLawPresent;
     }
 
+    /**
+     * Function to print the Wives/Husbands of siblings
+     * @param person
+     * @param Gender
+     * @return
+     */
     private static boolean printPartnerOfSiblings(Person person,String Gender){
         Person parent = person.getMother();
         String person_name = person.getName();
@@ -86,6 +115,12 @@ class RelationShips {
     }
 
 
+    /**
+     *
+     * Function to find the relationship & print them if exist, prints NONE if doesn't exist
+     * @param relationship
+     * @param person
+     */
     public static void findRelationShip(String relationship,Person person){
         boolean isRelationPresent=false;
         switch (relationship) {

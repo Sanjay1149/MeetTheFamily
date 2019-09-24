@@ -5,6 +5,10 @@ class CreateShanFamilyTree {
     private static Person queen=null;
     private static Person king=null;
 
+    /**
+     * Function to create a static family tree and return them at the start of the program
+     * @return
+     */
     public static Person createFamilTree(){
         king = new Person("Shan","Male",null,null);
         queen = new Person("Anga","Female",null,null);

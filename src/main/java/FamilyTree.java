@@ -8,6 +8,12 @@ public class FamilyTree {
 
     private static Person queen=null;
 
+    /**
+     * Function to find the person from input
+     * @param cur
+     * @param name
+     * @return
+     */
     private static Person findPerson(Person cur,String name){
 
         if(cur.getHusband()!=null){
@@ -32,6 +38,12 @@ public class FamilyTree {
         return null;
     }
 
+    /**
+     * Function to add children to the specified parent
+     * @param name
+     * @param gender
+     * @param mother
+     */
     private static void addChildren(String name,String gender,Person mother){
         Person child = new Person(name,gender,mother.getHusband(),mother);
         ArrayList<Person> children = mother.getChildren();
