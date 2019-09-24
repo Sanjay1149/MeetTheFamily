@@ -1,0 +1,10 @@
+GET_RELATIONSHIP Shan Son
+GET_RELATIONSHIP Lika Daughter
+GET_RELATIONSHIP Vritha Siblings
+GET_RELATIONSHIP Vila Paternal-Uncle
+GET_RELATIONSHIP Vila Paternal-Aunt
+GET_RELATIONSHIP Vyas Maternal-Uncle
+GET_RELATIONSHIP Atya Maternal-Aunt
+GET_RELATIONSHIP Amba Brother-In-Law
+GET_RELATIONSHIP Amba Sister-In-Law
+GET_RELATIONSHIP Vyan Brother-In-Law
