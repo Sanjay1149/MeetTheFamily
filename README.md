@@ -31,9 +31,9 @@ in the order in which they were added to the family tree [GET_RELATIONSHIP].
 ## Sample Input & Output
 
 ###### Input
->ADD_CHILD Satya Ketu Male
-GET_RELATIONSHIP Kriya Paternal-Uncle
-GET_RELATIONSHIP Satvy Brother-In-Law
+>ADD_CHILD Satya Ketu Male                          
+GET_RELATIONSHIP Kriya Paternal-Uncle                              
+GET_RELATIONSHIP Satvy Brother-In-Law             
 
 ###### Output
 >CHILD_ADDITION_SUCCEEDED       
